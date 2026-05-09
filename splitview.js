@@ -165,7 +165,6 @@ function createPanel(idx) {
 
   const iframe = document.createElement('iframe');
   iframe.allow = 'fullscreen; autoplay; encrypted-media; picture-in-picture';
-  iframe.setAttribute('allowfullscreen', '');
 
   const overlay = document.createElement('div');
   overlay.className = 'frame-overlay';
