@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>SplitView</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <rect x="1" y="1" width="8" height="8" rx="1.5" fill="#4a9eff"/>
+      <rect x="11" y="1" width="8" height="8" rx="1.5" fill="#4a9eff"/>
+      <rect x="1" y="11" width="8" height="8" rx="1.5" fill="#4a9eff"/>
+      <rect x="11" y="11" width="8" height="8" rx="1.5" fill="#4a9eff"/>
+    </svg>
+    <span class="title">SplitView</span>
+  </div>
+
+  <div class="section-label">⭐ プリセット</div>
+  <div id="presets-container"></div>
+
+  <!-- Edit modal -->
+  <div id="edit-overlay" hidden>
+    <div id="edit-modal">
+      <div class="edit-modal-title">プリセットを編集</div>
+      <div class="edit-modal-row">
+        <label>名前</label>
+        <input type="text" id="edit-name" maxlength="30">
+      </div>
+      <div id="edit-url-list"></div>
+      <div class="edit-modal-btns">
+        <button id="edit-cancel">キャンセル</button>
+        <button id="edit-save">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">2 パネル</div>
+  <div class="grid" id="grid-2"></div>
+
+  <div class="section-label">3 パネル</div>
+  <div class="grid" id="grid-3"></div>
+
+  <div class="section-label">4 パネル</div>
+  <div class="grid" id="grid-4"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

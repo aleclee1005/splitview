@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "SplitView - Multi Panel Browser",
+  "version": "1.1.0",
+  "description": "Display 2, 3, or 4 web pages simultaneously with resizable panels",
+  "homepage_url": "https://github.com/aleclee1005/splitview",
+  "permissions": ["tabs", "storage", "declarativeNetRequest", "history", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "run_at": "document_idle",
+    "all_frames": true
+  }],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_bypass",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  }
+}

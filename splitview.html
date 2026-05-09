@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>SplitView</title>
+  <link rel="stylesheet" href="splitview.css">
+</head>
+<body>
+  <!-- Broadcast bar (top) -->
+  <div id="broadcast-bar">
+    <div class="bc-icon" title="全パネルに一括送信">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M2 8h12M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="3" cy="4" r="1.5" fill="currentColor" opacity="0.5"/>
+        <circle cx="3" cy="12" r="1.5" fill="currentColor" opacity="0.5"/>
+      </svg>
+    </div>
+    <input id="broadcast-input" type="text" placeholder="全パネルに同じ質問を入力 → 送信">
+    <label class="bc-check-label" title="送信ボタンまで自動クリック">
+      <input type="checkbox" id="auto-submit-check" checked>
+      <span>自動送信</span>
+    </label>
+    <button id="broadcast-btn">全送信</button>
+  </div>
+
+  <div id="root"></div>
+
+  <!-- Save preset button (floating) -->
+  <button id="btn-save-float" title="プリセットとして保存">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <rect x="1" y="1" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+      <rect x="4" y="1" width="8" height="5" rx="0.5" stroke="currentColor" stroke-width="1.3"/>
+      <rect x="3.5" y="9" width="9" height="5.5" rx="1" stroke="currentColor" stroke-width="1.3"/>
+    </svg>
+    <span>保存</span>
+  </button>
+
+  <!-- Save modal -->
+  <div id="save-overlay" hidden>
+    <div id="save-modal">
+      <div class="modal-title">プリセットとして保存</div>
+      <div class="modal-preview" id="modal-preview"></div>
+      <input type="text" id="preset-name-input" placeholder="名前を入力 (例: AI 3分割)" maxlength="30">
+      <div class="modal-buttons">
+        <button id="btn-modal-cancel">キャンセル</button>
+        <button id="btn-modal-save">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="splitview.js"></script>
+</body>
+</html>

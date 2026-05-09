@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SplitView — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #ffffff;
+      color: #1a1a2e;
+      line-height: 1.7;
+      padding: 48px 20px 80px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 36px;
+      padding-bottom: 24px;
+      border-bottom: 2px solid #e8f0fe;
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+      background: #f0f6ff;
+      border-radius: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+      padding: 8px;
+      flex-shrink: 0;
+    }
+
+    .logo span {
+      background: #4a9eff;
+      border-radius: 2px;
+      display: block;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      letter-spacing: -0.3px;
+    }
+
+    header p {
+      font-size: 0.875rem;
+      color: #6b7280;
+      margin-top: 2px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1a1a2e;
+      margin: 36px 0 10px;
+      padding-left: 12px;
+      border-left: 3px solid #4a9eff;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #374151;
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      background: #f0f6ff;
+      border: 1px solid #c7dffe;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 10px 0 16px;
+    }
+
+    .highlight p {
+      margin: 0;
+      font-weight: 500;
+      color: #1e40af;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 16px;
+      font-size: 0.9rem;
+    }
+
+    th {
+      background: #f0f6ff;
+      color: #1e40af;
+      font-weight: 600;
+      text-align: left;
+      padding: 10px 14px;
+      border: 1px solid #c7dffe;
+    }
+
+    td {
+      padding: 10px 14px;
+      border: 1px solid #e5e7eb;
+      color: #374151;
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td {
+      background: #fafbff;
+    }
+
+    code {
+      background: #f3f4f6;
+      border: 1px solid #e5e7eb;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.85em;
+      color: #2563eb;
+    }
+
+    footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 0.85rem;
+      color: #9ca3af;
+    }
+
+    footer a {
+      color: #4a9eff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div class="logo">
+        <span></span><span></span>
+        <span></span><span></span>
+      </div>
+      <div>
+        <h1>SplitView Privacy Policy</h1>
+        <p>Last updated: May 9, 2026</p>
+      </div>
+    </header>
+
+    <p>
+      SplitView is a Chrome extension that lets you display multiple websites side-by-side in
+      resizable panels. This policy explains what data the extension accesses and how it is used.
+    </p>
+
+    <h2>Data Collection</h2>
+
+    <div class="highlight">
+      <p>SplitView does NOT collect, transmit, or share any personal data with external servers.
+      All data stays entirely on your device.</p>
+    </div>
+
+    <p>The extension accesses the following data <strong>locally only</strong>:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Purpose</th>
+          <th>Stored / Sent externally?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Browser history URLs</td>
+          <td>URL autocomplete suggestions in the address bar</td>
+          <td>Read locally only — never stored or sent</td>
+        </tr>
+        <tr>
+          <td>Panel presets (URLs + layout)</td>
+          <td>Save and restore your split-view configurations</td>
+          <td>Stored locally via <code>chrome.storage</code> — never sent externally</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Permissions Explained</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Why it is needed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>tabs</code></td>
+          <td>Open and manage the split-view tab layout.</td>
+        </tr>
+        <tr>
+          <td><code>storage</code></td>
+          <td>Save your panel presets locally using Chrome's built-in storage API.</td>
+        </tr>
+        <tr>
+          <td><code>history</code></td>
+          <td>Provide URL autocomplete suggestions from your browser history when typing in panel address bars.</td>
+        </tr>
+        <tr>
+          <td><code>declarativeNetRequest</code></td>
+          <td>Remove <code>X-Frame-Options</code> / <code>Content-Security-Policy</code> headers that would otherwise block websites from loading inside split panels.</td>
+        </tr>
+        <tr>
+          <td><code>scripting</code> / content scripts</td>
+          <td>Inject text into AI chat panels (ChatGPT, Gemini, Claude, etc.) to enable the broadcast feature that sends the same prompt to all panels at once.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Third-Party Services</h2>
+
+    <p>
+      SplitView does not integrate with any analytics, advertising, or crash-reporting services.
+      The websites you load in the panels are governed by their own privacy policies.
+    </p>
+
+    <h2>Children's Privacy</h2>
+
+    <p>
+      SplitView is a general-purpose browser tool and is not directed at children under 13.
+      We do not knowingly collect any information from children.
+    </p>
+
+    <h2>Changes to This Policy</h2>
+
+    <p>
+      If this policy changes materially, the updated version will be published at the extension's
+      homepage and the "Last updated" date above will be revised. Continued use of the extension
+      after such changes constitutes acceptance of the updated policy.
+    </p>
+
+    <h2>Contact</h2>
+
+    <p>
+      Questions or concerns? Please reach out at
+      <a href="mailto:alec.lee1005@gmail.com">alec.lee1005@gmail.com</a>.
+    </p>
+
+    <footer>
+      &copy; 2026 SplitView &mdash;
+      <a href="https://github.com/aleclee1005/splitview">GitHub</a>
+    </footer>
+
+  </div>
+</body>
+</html>
