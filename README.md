@@ -1,6 +1,6 @@
 # SplitView - Multi Panel Browser
 
-A Chrome extension to display 2, 3, or 4 websites simultaneously in resizable panels — perfect for comparing information or using multiple AI assistants at the same time.
+Stop switching tabs. SplitView lets you view 2, 3, or 4 websites side by side in a single window — look up references, compare prices, or read documentation without ever leaving your current page.
 
 ![SplitView Screenshot](https://raw.githubusercontent.com/aleclee1005/splitview/main/icons/icon128.png)
 
@@ -10,14 +10,13 @@ A Chrome extension to display 2, 3, or 4 websites simultaneously in resizable pa
 - **Drag-to-resize** panels at any time
 - **URL autocomplete** with browser history suggestions in every panel
 - **Broadcast bar** — type one question and send it to ALL panels at once
-- **Auto-submit** — automatically clicks the send button in AI chats after broadcasting
+- **Auto-submit** — automatically clicks the send button after broadcasting
 - **Presets** — save your favorite URL combinations and reopen in one click
-- Built-in **AI 3-panel preset** for Gemini + Claude + ChatGPT
 
 ## Installation
 
 ### From Chrome Web Store
-*(Coming soon)*
+*(Pending review)*
 
 ### Manual (Developer Mode)
 1. Download or clone this repository
@@ -30,7 +29,7 @@ A Chrome extension to display 2, 3, or 4 websites simultaneously in resizable pa
 1. Click the SplitView icon in your Chrome toolbar
 2. Choose a layout or open a saved preset
 3. Each panel has its own address bar — type a URL and press Enter
-4. Use the **broadcast bar** at the top to send the same message to all AI panels at once
+4. Use the **broadcast bar** at the top to send the same message to all panels at once
 
 ## Layouts
 
@@ -50,11 +49,10 @@ A Chrome extension to display 2, 3, or 4 websites simultaneously in resizable pa
 
 | Permission | Purpose |
 |-----------|---------|
-| `tabs` | Open and manage the split-view tab |
 | `storage` | Save panel presets locally |
 | `history` | URL autocomplete suggestions |
 | `declarativeNetRequest` | Allow websites to load inside iframe panels |
-| `scripting` / content scripts | Broadcast text to AI chat panels |
+| host permissions (`<all_urls>`) | Broadcast text to panels on any website |
 
 All data stays on your device. Nothing is collected or transmitted externally.
 
