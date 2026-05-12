@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
   "name": "SplitView - Multi Panel Browser",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Display 2, 3, or 4 web pages simultaneously with resizable panels",
   "homepage_url": "https://github.com/aleclee1005/splitview",
-  "permissions": ["tabs", "storage", "declarativeNetRequest", "history", "scripting"],
+  "permissions": ["storage", "declarativeNetRequest", "history"],
   "host_permissions": ["<all_urls>"],
   "action": {
     "default_popup": "popup.html",

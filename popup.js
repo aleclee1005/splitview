@@ -21,10 +21,10 @@ const LAYOUT_SVG_MAP = Object.fromEntries(
 
 const DEFAULT_PRESETS = [
   {
-    id: 'ai3',
-    name: 'AI 3分割',
+    id: 'example3',
+    name: '3分割',
     layout: '3r',
-    urls: ['https://gemini.google.com/app', 'https://claude.ai', 'https://chatgpt.com'],
+    urls: ['https://www.google.com', 'https://www.wikipedia.org', 'https://www.google.com/maps'],
     builtin: true,
   },
 ];
